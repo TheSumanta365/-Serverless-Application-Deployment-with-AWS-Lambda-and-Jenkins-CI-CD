@@ -65,7 +65,7 @@ pipeline {
                         --statement-id allow-apigateway \
                         --action lambda:InvokeFunction \
                         --principal apigateway.amazonaws.com \
-                        --source-arn arn:aws:execute-api:$REGION:*:$API_ID/*/GET/lambda \
+                        --source-arn arn:aws:execute-api:$REGION:008971675777:$API_ID/*/GET/lambda \
                         --region $REGION || true
 
                     # Deploy to prod
